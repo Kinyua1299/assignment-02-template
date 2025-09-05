@@ -18,3 +18,12 @@ export function sumOfNumbersTo(destination) {
   // Formula method: sum of first n numbers = n * (n + 1) / 2
   return (destination * (destination + 1)) / 2
 }
+
+
+
+
+
+
+
+
+// Alternative iterative method:
