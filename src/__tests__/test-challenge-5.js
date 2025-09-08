@@ -8,3 +8,23 @@ it('challenge - 5 : my findMultiples function can find multiples of 3 in an arra
         arrayOfMultiples: [3, 6, 9],
     })
 })
+
+export function findMultiples(numbers, divisor) {
+  let arrayOfMultiples = []
+  let sum = 0
+
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % divisor === 0) {
+      arrayOfMultiples.push(numbers[i])
+      sum += numbers[i]
+    }
+  }
+
+  let count = arrayOfMultiples.length
+
+  return {
+    count: count,
+    sum: sum,
+    arrayOfMultiples: arrayOfMultiples
+  }
+}

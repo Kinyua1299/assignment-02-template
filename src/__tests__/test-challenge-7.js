@@ -8,3 +8,33 @@ it('challenge - 7 : my findPrimeNumbers function can find prime numbers in an ar
         arrayOfPrimes: [2, 3, 5, 7],
     })
 })
+export function findPrimeNumbers(numbers) {
+  // function to check if number is prime
+  function isPrime(n) {
+    if (n < 2) return false
+    for (let i = 2; i <= Math.sqrt(n); i++) {
+      if (n % i === 0) {
+        return false
+      }
+    }
+    return true
+  }
+
+  let arrayOfPrimes = []
+  let sum = 0
+
+  for (let i = 0; i < numbers.length; i++) {
+    if (isPrime(numbers[i])) {
+      arrayOfPrimes.push(numbers[i])
+      sum += numbers[i]
+    }
+  }
+
+  let count = arrayOfPrimes.length
+
+  return {
+    count: count,
+    sum: sum,
+    arrayOfPrimes: arrayOfPrimes
+  }
+}
