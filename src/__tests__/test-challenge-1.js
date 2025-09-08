@@ -25,5 +25,4 @@ export function sumOfNumbersTo(destination) {
 
 
 
-
 // Alternative iterative method:
