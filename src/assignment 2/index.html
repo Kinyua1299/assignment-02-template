@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Shop</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo">BEJAMAS.</div>
+            <div class="cart-container">
+                <svg class="cart-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H18C18.4693 16.009 18.9268 15.8526 19.2925 15.5583C19.6581 15.264 19.9086 14.8504 20 14.39L23 6H6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div class="cart-popup" id="cart-popup">
+                    <div class="cart-popup-item">
+                        <img id="popup-img" src="" alt="Product Image">
+                        <div class="popup-item-details">
+                            <p id="popup-title"></p>
+                            <p id="popup-price"></p>
+                        </div>
+                    </div>
+                    <button class="clear-btn" id="clear-btn">CLEAR</button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="featured-product">
+                <div class="product-header">
+                    <h1>German Shepherd Print</h1>
+                    <button class="add-to-cart-btn" data-title="German Shepherd Print" data-price="$130.00" data-img="images/German-Shepherd-dog-Alsatian.webp">ADD TO CART</button>
+                </div>
+                <div class="product-image-large">
+                    <img src="images/German-Shepherd-dog-Alsatian.webp" alt="A German Shepherd dog, also known as an Alsatian">
+                    <div class="image-label">Photo of the day</div>
+                </div>
+                <div class="product-details-grid">
+                    <div class="about-product">
+                        <h3>About the German Shepherd Print</h3>
+                        <h4>Dogs</h4>
+                        <p>So how did the classical Latin become so incoherent? According to McClintock, a 15th century typesetter likely scrambled part of Cicero's De Finibus in order to provide placeholder text to mockup various fonts for a type specimen book.</p>
+                        <p>So how did the classical Latin become so incoherent? According to McClintock, a 15th century typesetter likely scrambled part of Cicero's De Finibus in order to provide placeholder text to mockup various fonts for a type specimen book.</p>
+                    </div>
+                    <div class="people-also-buy">
+                        <h3>People also buy</h3>
+                        <div class="also-buy-images">
+                             <img src="images/egg.jpg" alt="Egg">
+                             <img src="images/man.jpg" alt="Man in desert">
+                             <img src="images/architecture.jpg" alt="Orange architecture">
+                        </div>
+                        <h4>Details</h4>
+                        <p>Size: 1020 x 1020 pixel</p>
+                        <p>Size: 15 mb</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="product-gallery-section">
+                <div class="gallery-header">
+                    <h2>Photography / Premium Photos</h2>
+                </div>
+                
+                <div class="gallery-body">
+                    
+                    <aside class="filters-sidebar">
+                        <div class="filter-group">
+                            <h3>Category</h3>
+                            <div class="filter-item">
+                                <input type="checkbox" id="cat-people">
+                                <label for="cat-people">People</label>
+                            </div>
+                            <div class="filter-item">
+                                <input type="checkbox" id="cat-premium">
+                                <label for="cat-premium">Premium</label>
+                            </div>
+                            <div class="filter-item">
+                                <input type="checkbox" id="cat-pets" checked>
+                                <label for="cat-pets">Pets</label>
+                            </div>
+                            <div class="filter-item">
+                                <input type="checkbox" id="cat-food" checked>
+                                <label for="cat-food">Food</label>
+                            </div>
+                            <div class="filter-item">
+                                <input type="checkbox" id="cat-landmarks" checked>
+                                <label for="cat-landmarks">Landmarks</label>
+                            </div>
+                            <div class="filter-item">
+                                <input type="checkbox" id="cat-cities">
+                                <label for="cat-cities">Cities</label>
+                            </div>
+                            <div class="filter-item">
+                                <input type="checkbox" id="cat-nature">
+                                <label for="cat-nature">Nature</label>
+                            </div>
+                        </div>
+            
+                        <hr>
+            
+                        <div class="filter-group">
+                            <h3>Price range</h3>
+                            <div class="filter-item">
+                                <input type="checkbox" id="price-1">
+                                <label for="price-1">Lower than $20</label>
+                            </div>
+                            <div class="filter-item">
+                                <input type="checkbox" id="price-2">
+                                <label for="price-2">$20 - $100</label>
+                            </div>
+                            <div class="filter-item">
+                                <input type="checkbox" id="price-3">
+                                <label for="price-3">$100 - $200</label>
+                            </div>
+                            <div class="filter-item">
+                                <input type="checkbox" id="price-4">
+                                <label for="price-4">More than $200</label>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <div class="gallery-grid">
+                        <div class="product-card">
+                            <img src="images/red-bench.jpg" alt="Red Bench">
+                            <h3>Red Bench</h3>
+                            <p>$3.89</p>
+                            <button class="add-to-cart-btn" data-title="Red Bench" data-price="$3.89" data-img="images/red-bench.jpg">ADD TO CART</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="images/egg.jpg" alt="Egg Balloon">
+                            <h3>Egg Balloon</h3>
+                            <p>$93.89</p>
+                            <button class="add-to-cart-btn" data-title="Egg Balloon" data-price="$93.89" data-img="images/egg.jpg">ADD TO CART</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="images/man.jpg" alt="Man">
+                            <h3>Man</h3>
+                            <p>$100.00</p>
+                            <button class="add-to-cart-btn" data-title="Man" data-price="$100.00" data-img="images/man.jpg">ADD TO CART</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="images/architecture.jpg" alt="Architecture">
+                            <h3>Architecture</h3>
+                            <p>$101.00</p>
+                            <button class="add-to-cart-btn" data-title="Architecture" data-price="$101.00" data-img="images/architecture.jpg">ADD TO CART</button>
+                        </div>
+                    </div>
+            
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
